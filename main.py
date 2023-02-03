@@ -24,7 +24,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token="5974032933:AAFExZD-iEyoX6-GlXL4PkTgadL-j5OSE24",
+             bot_token="6132032718:AAHeNtUW3WZzEX7p5VeTkgBwKINtDWCx45I",
              api_id=9576601,
              api_hash="a9f1c1821757b62bc165ded384bad6a3")
 
@@ -34,7 +34,7 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a827182718271":
+    if txt0 == "a82718278271":
         pass
         await input0.delete(True)
     else:
@@ -42,7 +42,7 @@ async def account_login(bot: Client, m: Message):
         await input0.delete(True)
         return
 
-    editable = await m.reply_text("Hi\nPress /pyro")
+    editable = await m.reply_text("Hi\nPress /bulk")
 
 
 @bot.on_message(filters.command(["cancel"]))
@@ -50,7 +50,7 @@ async def cancel(_, m):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a827182718271":
+    if txt0 == "a82718278271":
         pass
         await input0.delete(True)
     else:
@@ -70,7 +70,7 @@ async def restart_handler(_, m):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a827182718271":
+    if txt0 == "a82718278271":
         pass
         await input0.delete(True)
     else:
@@ -82,12 +82,12 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["pyro"]) & ~filters.edited)
+@bot.on_message(filters.command(["bulk"]) & ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a827182718271":
+    if txt0 == "a82718278271":
         pass
         await input0.delete(True)
     else:
@@ -154,7 +154,7 @@ async def account_login(bot: Client, m: Message):
     raw_text2 = input2.text
 
     editable4 = await m.reply_text(
-        "Now send the **Thumb url**\nEg : ```https://telegra.ph/file/7b2c6ae187bb574ab73f6.jpg```\n\nor Send **no**"
+        "Now send the **Thumb url**\nEg : ```https://graph.org/file/94a2de65a76ea0a85d407.jpg```\n\nor Send **no**"
     )
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
@@ -429,7 +429,7 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a827182718271":
+    if txt0 == "a82718278271":
         pass
         await input0.delete(True)
     else:
@@ -588,7 +588,7 @@ async def adda_pdf(bot: Client, m: Message):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a827182718271":
+    if txt0 == "a82718278271":
         pass
         await input0.delete(True)
     else:
