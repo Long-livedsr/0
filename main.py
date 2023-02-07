@@ -34,7 +34,7 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a82718278271":
+    if txt0 == "a82718oo278271":
         pass
         await input0.delete(True)
     else:
@@ -50,7 +50,7 @@ async def cancel(_, m):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a82718278271":
+    if txt0 == "a82718oo278271":
         pass
         await input0.delete(True)
     else:
@@ -70,7 +70,7 @@ async def restart_handler(_, m):
     editable = await m.reply_text("Send passcode**")
     input0: Message = await bot.listen(editable.chat.id)
     txt0 = (input0.text)
-    if txt0 == "a82718278271":
+    if txt0 == "a82718oo278271":
         pass
         await input0.delete(True)
     else:
